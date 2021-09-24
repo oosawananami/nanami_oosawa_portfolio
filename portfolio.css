@@ -33,5 +33,7 @@
 
 .main_visual h1{
   font-size: 3.0em;
-  font: #fff;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
 }
