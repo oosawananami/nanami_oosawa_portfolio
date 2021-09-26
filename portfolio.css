@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
+header{
+   background-color: #F8B500;
+   width: 100vw;
+   margin: 0;
+}
 
 header ul{
   float: right; /*メニューリストを右に浮かせる*/
   list-style: none;
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
 header ul li{
@@ -17,10 +22,11 @@ header ul li{
 }
 
 .main_visual{
+  background-color: #F8B500;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 150px;
-  padding: 100 0 100 0;
+  padding: 200 0 300 0;
   justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
 }
 
@@ -57,6 +63,71 @@ header ul li{
 }
 
 body{
-  background-color: #F8B500;
+  margin: 0;
+  /* background-color: #F8B500; */
+}
 
+
+
+/*-------------------
+*
+*  プロフィール
+*
+--------------------*/
+.plofile_wrap{
+  position: relative;
+  left: 0;
+  background-color: #f9f9f9;
+  width: 100vw;
+  padding: 60 0 200 0;
+}
+.about{
+  text-align: center;
+  font-size: 3.0em;
+  font-style: italic;
+}
+
+.plofile{
+  display: flex;
+  justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+}
+
+.photo{
+  width: 200px;
+  padding: 0 20 0 20;
+}
+
+.photo img{
+  width: 100%;
+}
+
+.plofile_text{
+  position: relative;
+  vertical-align: middle;
+  padding-left: 30;
+  margin-top: 50;
+}
+
+.plofile_text::before{/*吹き出しみたいにしたい*/
+  /* content: " ";
+  position: absolute;
+  display: block;
+  width:330px;
+  height:105px;
+  background:#81C7D4;
+  -moz-border-radius: 50px / 25px;	/* 高さ÷2 */
+/*  -webkit-border-radius: 50px / 25px;
+  border-radius: 50% / 25%;*/
+}
+
+
+/*-------------------
+*
+*  スキル
+*
+--------------------*/
+.skill_wrap{
+  background-color: #f9f9f9;
+  width: 100vw;
+  padding: 60 0 200 0;
 }
