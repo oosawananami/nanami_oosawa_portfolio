@@ -131,31 +131,121 @@ body{
   padding: 60 0 200 0;
 }
 
-
-.skill_about{
-  width: auto;
-  color: #065f8e;
-}
 .ab01{
   width: 320px;
-  height: 40px;
+  /* height: 40px; */
   font-size: 1.2em;
-  margin-bottom: 0;
+  margin: 0;
+  vertical-align: bottom;
   background-color: #F8B500;
+  padding: 12px;
 }
+
 .ab02{
-  width: 250px;
-  height: 40px;
+  width: 200px;
+  /* height: 40px; */
   font-size: 1.2em;
-  margin-top: 0;
+  margin: 0;
+  vertical-align: middle;
   background-color: #F8B500;
+  padding: 12px;
+}
+
+.skill{
+  margin: 80 25 0 20;
+}
+
+.skill ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
 }
 
 .content_wrap{
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 10 10 10 10;
+  border-radius: 10px;
+  background-color: #FAC03D;
+  min-height: 140px;
 }
 
 .title{
   font-weight: bold;
   font-size: 1.5em;
+  text-align: right;
+  padding: 10 25 5 0;
+}
+
+/* .contents::before{
+  content: " ";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-image: url('icon-DB.svg');
+} */
+
+.contents{
+  /* width: 250px; */
+  padding: 0 20 10 0;
+  text-align: right;
+}
+
+
+/*-------------------
+*
+*  アウトプット
+*
+--------------------*/
+.deliverable{
+  background-color: #ffffff;
+  width: 100%;
+  padding: 60 0 200 0;
+}
+
+
+.op ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.product-left{
+  width: 60%;
+  height: 200px;
+  padding: 30;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  justify-content: center;
+  text-align: left;
+}
+
+
+.product-right{
+  width: 60%;
+  height: 200px;
+  padding: 30;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  justify-content: center;
+  text-align: right;
+}
+
+.pro-top{
+  font-weight: bold;
+  margin-top:  0;
+  margin-bottom: 10;
+  font-size: 1.3em;
 }
