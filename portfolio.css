@@ -249,11 +249,35 @@ body{
   margin-bottom: 10;
   font-size: 1.3em;
 }
+
+/*-------------------
+*
+*  ↓↓↓スマホ↓↓↓
+*
+--------------------*/
+
  @media screen and (max-width: 576px) {
+   header ul{
+     padding-right: 10;
+   }
     header ul li{
       color: #ffffff;
     }
     .main_visual h1{
       padding-left: 10px; 
     }
+
+/*-------------------
+*
+*  プロフィール
+*
+--------------------*/
+.plofile_text{
+  position: relative;
+  vertical-align: middle;
+  width: 45%;
+  margin-top: 35;
+  padding-right: 20;
+}
+
  }
