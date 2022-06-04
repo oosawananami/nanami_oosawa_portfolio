@@ -249,3 +249,11 @@ body{
   margin-bottom: 10;
   font-size: 1.3em;
 }
+ @media screen and (max-width: 576px) {
+    header ul li{
+      color: #ffffff;
+    }
+    .main_visual h1{
+      padding-left: 10px; 
+    }
+ }
