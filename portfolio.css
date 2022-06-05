@@ -194,7 +194,7 @@ body{
 .content_wrap{
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 38%;
   margin: 10 10 10 10;
   border-radius: 10px;
   background-color: #FAC03D;
@@ -208,7 +208,28 @@ body{
   padding: 10 25 5 0;
 }
 
-/* .contents::before{
+
+.contents{
+  display: flex;
+  gap:50px;
+  padding: 0 20 10 60;
+  text-align: left;
+}
+
+.icon1::before{
+  content: " ";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-image: url('icon-PG.svg');
+}
+
+.icon2::before{
   content: " ";
   display: inline-block;
   width: 100px;
@@ -219,14 +240,33 @@ body{
   vertical-align: middle;
   border-radius: 50%;
   background-image: url('icon-DB.svg');
-} */
-
-.contents{
-  /* width: 250px; */
-  padding: 0 20 10 0;
-  text-align: right;
 }
 
+.icon3::before{
+  content: " ";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-image: url('icon-hoshu.svg');
+}
+
+.icon4::before{
+  content: " ";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-image: url('icon-book.svg');
+}
 
 /*-------------------
 *
