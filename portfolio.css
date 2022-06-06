@@ -366,6 +366,15 @@ body{
   --------------------*/
 
  @media screen and (max-width: 576px){
+   body{
+     margin: 0;
+   }
+   header{
+   background-color: #F8B500;
+   width: 100%;
+   margin: 0;
+}
+
      header ul{
        padding-right: 10;
      }
@@ -430,6 +439,16 @@ body{
     border-left:   20px solid transparent;
     border-top:  20px solid transparent;
   }
+  
+  
+  
+  .skill ul{
+  display: block;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
 
 }
 
