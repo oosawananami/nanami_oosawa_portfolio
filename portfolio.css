@@ -396,16 +396,19 @@ body{
   width: 200px;
   padding: 0 20 80 20;
 }  
+.plofile{
+  display: flex;
+  justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+}
   .plofile_text{
     position: relative;
     vertical-align: middle;
     width: 45%;
     padding-right: 20;
     height: 140px;
-    margin: 10 0 0 30;
-    padding: 10 20 10 20;
+    margin: 10 30 0 0;
     border-radius: 10px;
-  background-color: #F8B500;
+    background-color: #F8B500;
   }
   
   .plofile_text::before{/* 色付きの半円 */
@@ -440,14 +443,48 @@ body{
     border-top:  20px solid transparent;
   }
   
-  
-  
+/*-------------------
+*
+*  スキル
+*
+--------------------*/  
+.skill{
+  margin: 80 25 0 20;
+}
+
   .skill ul{
   display: block;
-  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
-  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.content_wrap{
+  display: block;
+  width: 100%;
+  margin: 10 10 50 10;
+  border-radius: 10px;
+  background-color: #FAC03D;
+  min-height: 140px;
+}
+
+.contents{
+  display: flex;
+  gap:20px;
+  padding: 0 20 10 20;
+  text-align: left;
+}
+
+.icon1::before{
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: left;
+  border-radius: 50%;
+  background-image: url('icon-PG.svg');
 }
 
 }
