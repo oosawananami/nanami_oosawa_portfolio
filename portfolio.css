@@ -381,12 +381,55 @@ body{
   *  プロフィール
   *
   --------------------*/
+  
+
+.photo{
+  width: 200px;
+  padding: 0 20 80 20;
+}  
   .plofile_text{
     position: relative;
     vertical-align: middle;
     width: 45%;
-    margin-top: 35;
     padding-right: 20;
+    height: 140px;
+    margin: 10 0 0 30;
+    padding: 10 20 10 20;
+    border-radius: 10px;
+  background-color: #F8B500;
   }
+  
+  .plofile_text::before{/* 色付きの半円 */
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  left: 25px;
+  bottom: -15px;
+  border-right:  20px solid #F8B500;
+  border-bottom:  20px solid #F8B500;
+  border-left:  20px solid transparent;
+  border-top: 20px solid transparent;}
+
+  /* 白い半円 */
+  .plofile_text::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    left: 5px;
+    bottom:  -20px;
+    border-right:   20px solid #f9f9f9;
+    border-bottom:  20px solid #f9f9f9;
+    border-left:   20px solid transparent;
+    border-top:  20px solid transparent;
+  }
+
 }
 
