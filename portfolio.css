@@ -455,13 +455,12 @@ body{
   .skill ul{
   display: block;
   list-style: none;
-  padding-bottom: 40px;
 }
 
 .content_wrap{
   display: block;
   width: 100%;
-  margin: 10 10 50 10;
+  margin: 0 10 50 10;
   border-radius: 10px;
   background-color: #FAC03D;
   min-height: 140px;
@@ -474,18 +473,6 @@ body{
   text-align: left;
 }
 
-.icon1::before{
-  content: " ";
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: left;
-  border-radius: 50%;
-  background-image: url('icon-PG.svg');
-}
 
 }
 
