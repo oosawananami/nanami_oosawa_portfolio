@@ -2,7 +2,7 @@
 
 header{
    background-color: #F8B500;
-   width: 100%;
+   widkimi00%;
    margin: 0;
 }
 
@@ -41,15 +41,22 @@ header ul li{
   height: 150px;
 }
 
-.egg-1 { /*白身*/
+.siromi { /*白身*/
   position: absolute;
 	width: 110px;
 	height: 150px;
 	border-radius : 80% 80% 80% 80% / 100% 100% 65% 65%;
 	background: #ffffff;
+   transition: transform 1s; /*1秒かけて動作 */
+  transform-origin: bottom;　/*動作の支点*/
 }
 
-.egg-2{　/*黄身*/
+.siromi:hover{  /*ホバーで傾く*/
+  transform:rotate(25deg);
+  transform-origin: bottom;
+}
+
+.kimi{　/*黄身*/
   position: absolute;
 	width: 75px;
 	height: 75px;
@@ -369,7 +376,7 @@ body{
    body{
      margin: 0;
    }
-   
+
    header{
    background-color: #F8B500;
    width: 100%;
@@ -383,19 +390,20 @@ body{
     padding-left: 10%;
     margin-top: 5%;
    }
-  
+
    header ul li{
    }
-   
-   
+
+
    .main_visual{
    background-color: #F8B500;
    display: flex;
    width: 100%;
    padding-top: 65%;
    justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+   flex-wrap: wrap;
 }
-    
+
    .main_visual h1{
     padding-left: 0px;
    }
@@ -405,13 +413,13 @@ body{
   *  プロフィール
   *
   --------------------*/
-  
+
 
    .photo{
     width: 200px;
     padding: 0 20 80 20;
-   }  
-   
+   }
+
    .plofile{
     display: flex;
     justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
@@ -420,13 +428,12 @@ body{
      position: relative;
      vertical-align: middle;
      width: 45%;
-     padding-right: 20;
-     height: 140px;
+     height: 100%;
      margin: 10 30 0 0;
      border-radius: 10px;
      background-color: #F8B500;
     }
-  
+
   .plofile_text::before{/* 色付きの半円 */
   content: '';
   position: absolute;
@@ -458,12 +465,12 @@ body{
     border-left:   20px solid transparent;
     border-top:  20px solid transparent;
   }
-  
+
 /*-------------------
 *
 *  スキル
 *
---------------------*/  
+--------------------*/
 .skill{
   margin: 80 25 0 20;
 }
@@ -491,4 +498,3 @@ body{
 
 
 }
-

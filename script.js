@@ -1,5 +1,7 @@
 //上に戻るボタンstart
 $(function() {
+  // alert("描画完了");
+
   var showflag = false;
   var pagetop = $('#page_top');
   pagetop.css('bottom', '-100px');
@@ -26,5 +28,7 @@ $(function() {
     return false;
   });
   //上に戻るボタンend
+
+
 
 });
