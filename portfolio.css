@@ -369,21 +369,36 @@ body{
    body{
      margin: 0;
    }
+   
    header{
    background-color: #F8B500;
    width: 100%;
+   height: 100%;
    margin: 0;
-}
+   }
 
-     header ul{
-       padding-right: 10;
-     }
-      header ul li{
-        color: black;
-      }
-      .main_visual h1{
-        padding-left: 0px;
-      }
+   header ul{
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 10%;
+   }
+  
+   header ul li{
+   }
+   
+   
+   .main_visual{
+   background-color: #F8B500;
+   display: flex;
+   width: 100%;
+   padding-top: 65%;
+   justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+}
+    
+   .main_visual h1{
+    padding-left: 0px;
+   }
 
   /*-------------------
   *
@@ -392,24 +407,25 @@ body{
   --------------------*/
   
 
-.photo{
-  width: 200px;
-  padding: 0 20 80 20;
-}  
-.plofile{
-  display: flex;
-  justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
-}
-  .plofile_text{
-    position: relative;
-    vertical-align: middle;
-    width: 45%;
-    padding-right: 20;
-    height: 140px;
-    margin: 10 30 0 0;
-    border-radius: 10px;
-    background-color: #F8B500;
-  }
+   .photo{
+    width: 200px;
+    padding: 0 20 80 20;
+   }  
+   
+   .plofile{
+    display: flex;
+    justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+   }
+   .plofile_text{
+     position: relative;
+     vertical-align: middle;
+     width: 45%;
+     padding-right: 20;
+     height: 140px;
+     margin: 10 30 0 0;
+     border-radius: 10px;
+     background-color: #F8B500;
+    }
   
   .plofile_text::before{/* 色付きの半円 */
   content: '';
