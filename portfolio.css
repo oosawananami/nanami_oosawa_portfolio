@@ -4,6 +4,10 @@ header{
    background-color: #F8B500;
    width:100%;
    margin: 0;
+   background: linear-gradient(45deg,#FF4F02,#F8B500,#FFFF00);
+   animation: GradietionAnime 9s ease infinite;
+   background-size: 200% 200%;
+
 }
 
  a{
@@ -168,7 +172,7 @@ body{
 *
 --------------------*/
 .skill_wrap{
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   width: 100%;
   padding: 60 0 200 0;
 }
@@ -288,7 +292,7 @@ body{
 *
 --------------------*/
 .deliverable{
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   width: 100%;
   padding: 60 0 200 0;
 }
@@ -308,8 +312,8 @@ body{
     top: 42%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #666;/*矢印の色*/
-    border-right: 2px solid #666;/*矢印の色*/
+    border-top: 2px solid #092470;/*矢印の色*/
+    border-right: 2px solid #092470;/*矢印の色*/
     height: 15px;
     width: 15px;
 }
@@ -358,7 +362,7 @@ body{
 .product{
   padding: 30px;
   margin: 5 10 5 10;
-  background-color: 	#BBBBBB;
+  background-color: 	#ffffff;
   /* opacity: 0.7; */
   justify-content: center;
   text-align: left;
@@ -374,6 +378,11 @@ body{
   font-size: 1.3em;
 }
 
+/*-------------------
+*
+*  上に戻るボタン
+*
+--------------------*/
 
 #page_top{
   width: 50px;
