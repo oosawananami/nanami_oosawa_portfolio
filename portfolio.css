@@ -331,7 +331,7 @@ body{
   position: fixed;
   right: 20;
   bottom: 20;
-  background: #F8B500;
+  background: #092470;
   opacity: 0.6;
   border-radius: 50%;
 
@@ -361,7 +361,7 @@ body{
 }
 
 #page_top:hover{
-  background: #F8B500;
+  background: #092470;
   border-radius: 50%;
   opacity:1;
   }
@@ -495,6 +495,38 @@ body{
   padding: 0 20 10 20;
   text-align: left;
 }
+
+/*-------------------
+*
+*  アウトプット
+*
+--------------------*/
+
+.op{
+  
+  padding: 10px;
+}
+
+.op ul{
+  overflow-x:scroll;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.op ul li{
+  width: 250%;
+  display: flex;
+}
+.product-left{
+  background-color: #FAC03D;
+}
+
+.product-right{
+  background-color:#FAC03D;
+}
+
 
 
 }
