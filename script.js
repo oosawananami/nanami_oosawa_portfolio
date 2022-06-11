@@ -30,5 +30,15 @@ $(function() {
   //上に戻るボタンend
 
 
+  $('.slider').slick({
+    autplay:false, //自動的に動かさない
+    infinite:true, //スライドをループ
+    slidesToShow:2, //スライドを画面に映す枚数
+    slidesToScroll:1, //1回のスクロールで移動する枚数
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+    dots:true,
+  })
+
 
 });
