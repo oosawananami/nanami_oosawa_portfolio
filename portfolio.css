@@ -2,7 +2,7 @@
 
 header{
    background-color: #F8B500;
-   widkimi00%;
+   width:100%;
    margin: 0;
 }
 
@@ -27,14 +27,21 @@ header ul li{
 }
 
 .main_visual{
-  background-color: #F8B500;
+  /* background-color: #F8B500; */
+  background: linear-gradient(45deg,#FF4F02,#F8B500,#FFFF00);
+  animation: GradietionAnime 9s ease infinite;
+  background-size: 200% 200%;
   display: flex;
   width: 100%;
   height: 150px;
   padding: 200 0 300 0;
   justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
 }
-
+@keyframes GradietionAnime{
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
 .egg{
   position: relative;
   width: 110px;
@@ -289,6 +296,7 @@ body{
 .slider{
   list-style: none;
   width:80%;
+  height: 300px;
   margin:0 auto;
 }
 
@@ -322,12 +330,12 @@ body{
 /*ドットナビゲーションの設定*/
 
 .slick-dots {
-    text-align:center;
+  text-align:center;
 	margin:20px 0 0 0;
 }
 
 .slick-dots li {
-    display:inline-block;
+  display:inline-block;
 	margin:0 5px;
 }
 
@@ -338,21 +346,24 @@ body{
     height:15px;/*ドットボタンのサイズ*/
     display:block;
     border-radius:50%;
-    background:#ccc;/*ドットボタンの色*/
+    border-color: #FFD900;
+    background:#FFD900;/*ドットボタンの色*/
+    opacity: 0.8;
 }
 
 .slick-dots .slick-active button{
-    background:#333;/*ドットボタンの現在地表示の色*/
+    background:#092470;/*ドットボタンの現在地表示の色*/
 }
 
 .product{
-  width: 30px;
-  height: 30px;
   padding: 30px;
   margin: 5 10 5 10;
-  background-color: #f9f9f9;
+  background-color: 	#BBBBBB;
+  /* opacity: 0.7; */
   justify-content: center;
   text-align: left;
+  border-radius: 10px;
+
 }
 
 
