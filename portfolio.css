@@ -5,7 +5,7 @@ header{
    width:100%;
    margin: 0;
    background: linear-gradient(45deg,#FF4F02,#F8B500,#FFFF00);
-   animation: GradietionAnime 9s ease infinite;
+   animation: GradietionAnime 6s ease infinite;
    background-size: 200% 200%;
 
 }
@@ -33,7 +33,7 @@ header ul li{
 .main_visual{
   /* background-color: #F8B500; */
   background: linear-gradient(45deg,#FF4F02,#F8B500,#FFFF00);
-  animation: GradietionAnime 9s ease infinite;
+  animation: GradietionAnime 6s ease infinite;
   background-size: 200% 200%;
   display: flex;
   width: 100%;
