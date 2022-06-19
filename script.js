@@ -7,7 +7,8 @@ $(function() {
   pagetop.css('bottom', '-100px');
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {  //100pxスクロールしたら
+    if ($(this).scrollTop() > 300) { 
+      //100pxスクロールしたら
       if (showflag == false) {
         showflag = true;
         pagetop.stop().animate({
@@ -28,6 +29,27 @@ $(function() {
     return false;
   });
   //上に戻るボタンend
+  
+  $(window).scroll(function () {
+    
+    let profile = $('.plofile');
+    let profile0 = profile.offset().top;
+    let windowH = $(window).height();
+    
+    let windowS = $(window).scrollTop();
+    
+
+
+    if (windowS >= profile0 - windowH + (windowH/2)){
+
+      profile.css({
+        'opacity':'1', 
+        'transform': 'translateY(0)'
+      });
+    }
+  });
+  
+  
 
 
   $('.slider').slick({

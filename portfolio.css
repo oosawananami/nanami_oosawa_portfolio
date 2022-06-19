@@ -89,6 +89,10 @@ body{
   margin: 0;
 }
 
+.fadeIn{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 /*-------------------
@@ -113,6 +117,9 @@ body{
 .plofile{
   display: flex;
   justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+  opacity: 0.3;
+  transform: translateY(-15px);
+  transition: 1s ease;
 }
 
 .photo{
