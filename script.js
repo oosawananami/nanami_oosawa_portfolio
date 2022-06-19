@@ -42,10 +42,12 @@ $(function() {
 
     if (windowS >= profile0 - windowH + (windowH/2)){
 
-      profile.css({
-        'opacity':'1', 
-        'transform': 'translateY(0)'
-      });
+    //  profile.css({
+     //   'opacity':'1', 
+   //     'transform': 'translateY(0)'
+      //});
+      
+      profile.addClass('fadeIn');
     }
   });
   
