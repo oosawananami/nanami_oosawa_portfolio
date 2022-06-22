@@ -33,6 +33,8 @@ $(function() {
   });
   //上に戻るボタンend
   
+  
+  //フェードインstart
   $(window).scroll(function () {
     
     let profile = $('.plofile');
@@ -40,16 +42,19 @@ $(function() {
     let windowH = $(window).height();
     
     let windowS = $(window).scrollTop();
-    
-
-
-    if (windowS >= profile0 - windowH + (windowH/2)){
+  
+    if (windowS >= profile0 - windowH + 600){
       profile.addClass('fadeIn');
     }
+    
+    let content = $('.content_wrap');
+    let content0 = content.offset().top;
+    if (windowS >= content0 - windowH + 600){
+      content.addClass('fadeIn');
+    }
   });
-  
-  
-
+  //フェードインend
+ 
 
   $('.slider').slick({
     autplay:false, //自動的に動かさない

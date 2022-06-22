@@ -176,10 +176,6 @@ body{
     border-top:  20px solid transparent;
   }
 
-.fadeIn{
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /*-------------------
 *
@@ -232,6 +228,9 @@ body{
   border-radius: 10px;
   background-color: #FAC03D;
   min-height: 140px;
+  opacity:0;
+  transform: translateY(-15px);
+  transition: 5s ease;
 }
 
 .title{
@@ -299,6 +298,11 @@ body{
   vertical-align: middle;
   border-radius: 50%;
   background-image: url('icon-book.svg');
+}
+
+.fadeIn{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*-------------------
