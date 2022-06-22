@@ -19,6 +19,9 @@ header ul{
   float: right; /*メニューリストを右に浮かせる*/
   list-style: none;
   padding-right: 100px;
+  opacity:0;
+  transform: translateY(-15px);
+  transition: 0.8s ease;
 }
 
 header ul li{
@@ -40,6 +43,9 @@ header ul li{
   height: 150px;
   padding: 200 0 300 0;
   justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+  opacity:0;
+  transform: translateY(-15px);
+  transition: 0.8s ease;
 }
 @keyframes GradietionAnime{
 	0% {background-position: 0% 50%;}
@@ -169,6 +175,11 @@ body{
     border-left:   20px solid transparent;
     border-top:  20px solid transparent;
   }
+
+.fadeIn{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /*-------------------
 *
@@ -432,11 +443,6 @@ body{
   border-radius: 50%;
   opacity:1;
   }
-
-.fadeIn{
-  opacity: 1;
-  transform: translateY(0);
-}
 
 
   /*-------------------

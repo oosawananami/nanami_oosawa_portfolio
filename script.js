@@ -1,6 +1,9 @@
 //上に戻るボタンstart
 $(function() {
   // alert("描画完了");
+    $('header ul').addClass('fadeIn');
+    $('.main_visual').addClass('fadeIn');
+
 
   var showflag = false;
   var pagetop = $('#page_top');
@@ -41,12 +44,6 @@ $(function() {
 
 
     if (windowS >= profile0 - windowH + (windowH/2)){
-
-    //  profile.css({
-     //   'opacity':'1', 
-   //     'transform': 'translateY(0)'
-      //});
-      
       profile.addClass('fadeIn');
     }
   });
