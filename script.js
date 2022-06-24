@@ -39,22 +39,24 @@ $(function() {
     
     let profile = $('.plofile');
     let profile0 = profile.offset().top;
-    let windowH = $(window).height();
+    let profile1 = profile0 + profile.height();
     
+    let content = $('.content_wrap');
+   // let content0 = content.offset().top;
+    
+    let windowH = $(window).height();
     let windowS = $(window).scrollTop();
   
-    if (windowS >= profile0 - windowH + 600){
+    if (windowS > profile0 - windowH + (windowH/2)){
       profile.addClass('fadeIn');
     }
     
-    let content = $('.content_wrap');
-    let content0 = content.offset().top;
-    if (windowS >= content0 - windowH + 600){
+    if (windowS > profile1 ){
       content.addClass('fadeIn');
     }
   });
   //フェードインend
- 
+ 2
 
   $('.slider').slick({
     autplay:false, //自動的に動かさない

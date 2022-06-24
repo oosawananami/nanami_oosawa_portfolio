@@ -230,7 +230,7 @@ body{
   min-height: 140px;
   opacity:0;
   transform: translateY(-15px);
-  transition: 5s ease;
+  transition: 0.8s ease;
 }
 
 .title{
