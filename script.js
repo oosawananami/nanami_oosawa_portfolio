@@ -56,7 +56,6 @@ $(function() {
     }
   });
   //フェードインend
- 2
 
   $('.slider').slick({
     autplay:false, //自動的に動かさない
