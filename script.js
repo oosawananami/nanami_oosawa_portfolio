@@ -10,7 +10,7 @@ $(function() {
   pagetop.css('bottom', '-100px');
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) { 
+    if ($(this).scrollTop() > 300) {
       //100pxスクロールしたら
       if (showflag == false) {
         showflag = true;
@@ -32,34 +32,45 @@ $(function() {
     return false;
   });
   //上に戻るボタンend
-  
-  
+
+
   //フェードインstart
   $(window).scroll(function () {
-    
+
     let profile = $('.plofile');
     let profile0 = profile.offset().top;
     let profile1 = profile0 + profile.height();
-    
+
     let content = $('.content_wrap');
    // let content0 = content.offset().top;
-    
-    let windowH = $(window).height();
-    let windowS = $(window).scrollTop();
-  
-    if (windowS > profile0 - windowH + (windowH/2)){
-      profile.addClass('fadeIn');
-    }
-    
-    let skill1 = $('.sk').offset().top;
-    if (windowS > skill1 ) {
-        $('.ab01').addClass('leftIn');
 
+    let windowH = window.innerHeight;
+    let windowS = $(window).scrollTop();
+
+// ABOUTフェードイン
+    if (windowS > profile0 - windowH + (windowH/3)){
+      profile.addClass('fadeIn');
+    }else{
+      profile.removeClass('fadeIn');
     }
-    
+
+// SKILLSフェードイン
+    let skill1 = $('.sk').offset().top;
+    if (windowS >= skill1 - windowH + (windowH/3)) {
+        $('.ab01').addClass('leftIn');
+        $('.ab02').addClass('leftIn');
+    }else{
+      $('.ab01').removeClass('leftIn');
+      $('.ab02').removeClass('leftIn');
+    }
+
+
     if (windowS > profile1 ){
       content.addClass('fadeIn');
+    }else{
+      content.removeClass('fadeIn');
     }
+
   });
   //フェードインend
 
