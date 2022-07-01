@@ -51,6 +51,12 @@ $(function() {
       profile.addClass('fadeIn');
     }
     
+    let skill1 = $('.sk').offset().top;
+    if (windowS > skill1 ) {
+        $('.ab01').addClass('leftIn');
+
+    }
+    
     if (windowS > profile1 ){
       content.addClass('fadeIn');
     }

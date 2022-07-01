@@ -196,6 +196,9 @@ body{
   vertical-align: bottom;
   background-color: #F8B500;
   padding: 12px;
+  transform: translateX(-200px);
+  transition: 0.5s ease;
+  opacity: 0;
 }
 
 .ab02{
@@ -303,6 +306,10 @@ body{
 .fadeIn{
   opacity: 1;
   transform: translateY(0);
+}
+.leftIn{
+  opacity: 1;
+  transform:translateX(0);
 }
 
 /*-------------------
