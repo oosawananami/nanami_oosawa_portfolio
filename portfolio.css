@@ -314,6 +314,7 @@ body{
   background-color: #f9f9f9;
   width: 100%;
   padding: 60 0 200 0;
+  overflow-wrap:normal;
 }
 
 .slider{
@@ -387,7 +388,7 @@ body{
   text-align: left;
   border-radius: 10px;
 
-}
+} 
 
 .pro-top{
   font-weight: bold;
@@ -396,9 +397,17 @@ body{
   font-size: 1.3em;
 }
 
+
+
+
 #jump{
   text-decoration: none;
-  color:black;
+  font-weight: bold;
+  color:#0d8bb5;
+}
+
+#jump:hover{
+  color:#33a5cb;
 }
 
 /*-------------------
