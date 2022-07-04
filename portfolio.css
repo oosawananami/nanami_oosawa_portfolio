@@ -424,6 +424,26 @@ body{
 
 /*-------------------
 *
+*  CONTACT
+*
+--------------------*/
+
+.contact{
+  width: 100%;
+  padding: 60 0 200 0;
+}
+
+.gitlink{
+  display: flex;
+  justify-content: center; /*display: flex;のコンテンツを中央寄せにする*/
+  align-items: center;
+}
+
+
+
+
+/*-------------------
+*
 *  上に戻るボタン
 *
 --------------------*/
